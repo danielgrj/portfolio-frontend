@@ -64,3 +64,13 @@ code {
   opacity: 0.1;
   transition: opacity 250ms;
 }
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-container {
+    padding-top: 12vh;
+  }
+}

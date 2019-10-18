@@ -2,6 +2,7 @@
   color: #fff;
   justify-content: center;
   align-items: center;
+  max-height: 100vh;
 }
 
 .contact > form {
@@ -45,4 +46,19 @@
 .contact input[type='submit'] {
   width: 10rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact {
+    justify-content: flex-start;
+  }
+
+  .contact input {
+    width: 100%;
+  }
+
+  .contact > form,
+  .contact > div {
+    width: 90%;
+  }
 }

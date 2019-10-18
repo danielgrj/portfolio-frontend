@@ -7,7 +7,7 @@ import './navbar.css'
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar" id="navbar">
       <ul>
         <li>
           <NavLink exact to="/" activeClassName="active">Home</NavLink>

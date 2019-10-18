@@ -8,6 +8,11 @@ export default function Projects() {
 
   useEffect(() => {
     setInProp(true)
+    document.querySelector('#navbar').classList.add('navbar-projects')
+
+    return () => {
+      document.querySelector('#navbar').classList.remove('navbar-projects')
+    }
   }, [])
 
   return (
