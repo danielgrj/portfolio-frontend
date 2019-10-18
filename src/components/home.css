@@ -1,0 +1,54 @@
+.home {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.speach-container {
+  width: 55vw;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.speach-container .text {
+  width: 40vw;
+}
+
+.speach-container h1 {
+  margin: 0;
+}
+
+.speach-container h2 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.avatar {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 3vw;
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speach-container p {
+  margin-bottom: 5rem;
+}
+
+.speach-container a {
+  color: inherit;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
