@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import './home.css'
+import './home.css';
 
 export default function Home() {
   const [inProp, setInProp] = useState(false);
 
   useEffect(() => {
-    setInProp(true)
-  }, [])
+    setInProp(true);
+  }, []);
 
   return (
     <CSSTransition in={inProp} timeout={250} classNames="section">

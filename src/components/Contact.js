@@ -8,25 +8,25 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage ] = useState('');
-  const [notification, setNotification] = useState(undefined)
-  const [inProp, setInProp] = useState(false)
+  const [notification, setNotification] = useState(undefined);
+  const [inProp, setInProp] = useState(false);
   const [inNotification, setInNotification] = useState(false);
 
   useEffect(() => {
-    setInProp(true)
-  }, [])
+    setInProp(true);
+  }, []);
 
   const onSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      await MAIL_SERVICE.sendMail({ email, name, message })
-      setNotification('Your message was sent')
-      setInNotification(true)
+      await MAIL_SERVICE.sendMail({ email, name, message });
+      setNotification('Your message was sent');
+      setInNotification(true);
     } catch (e) {
-      setNotification('There was a problem with the server, please try again.')
-      setInNotification(true)
+      setNotification('There was a problem with the server, please try again.');
+      setInNotification(true);
     }
-  }
+  };
 
   return (
     <TransitionGroup>
