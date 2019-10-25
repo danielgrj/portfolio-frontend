@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import MAIL_SERVICE from './../services/mail'
+import React, { useState, useEffect } from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import MAIL_SERVICE from './../services/mail';
 
-import './contact.css'
+import './contact.css';
 
 export default function Contact() {
   const [email, setEmail] = useState('');

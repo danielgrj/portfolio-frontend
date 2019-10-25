@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import { CSSTransition } from 'react-transition-group'
+import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
-import './projects.css'
+import './projects.css';
 
 export default function Projects() {
   const [inProp, setInProp] = useState(false);
 
   useEffect(() => {
-    setInProp(true)
-    document.querySelector('#navbar').classList.add('navbar-projects')
+    setInProp(true);
+    document.querySelector('#navbar').classList.add('navbar-projects');
 
     return () => {
-      document.querySelector('#navbar').classList.remove('navbar-projects')
+      document.querySelector('#navbar').classList.remove('navbar-projects');
     }
-  }, [])
+  }, []);
 
   return (
     <CSSTransition in={inProp} timeout={250} classNames="section">
